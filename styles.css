@@ -55,7 +55,7 @@ html, body {
 /* Стили для кнопки "Инструкция" */
 .instruction-button {
     font-size: 1rem;
-    color: #2B000C;
+    color: black;
     background: none;
     border: none;
     padding: 0;
@@ -79,11 +79,11 @@ html, body {
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 400px;
-    background: #2B000C;
+    background: black;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(80, 0, 10, 0.6);
+    box-shadow: black;
 }
 
 /* Модальные окна */
@@ -345,7 +345,7 @@ p {
 
 .download-button:hover {
     transform: scale(1.1);
-    background: wheat;
+    background: black;
 }
 
 /* Секция загрузки */
@@ -420,7 +420,7 @@ p {
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 400px;
-    background: wheat;
+    background: black;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
