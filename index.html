@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxWar</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="iconn.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="iconn.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="iconn.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+
+  <div class="header">
+    <div class="logo">
+      <img src="iconn.png" alt="Логотип LuxWar" class="logo-img">
+      LuxWar
+    </div>
+  
+    <button class="why-us-button">Почему мы?</button>
+    <button class="instruction-button">Инструкция</button>
+    <button class="social-media-button">Социальные сети</button>
+  </div>
+
+  <section class="section download-section">
+    <div class="button-container">
+      <button class="download-button" id="downloadButton">Скачать Лоадер</button>
+      <button class="download-button" id="openSiteButton">Скачать настройки</button>
+    </div>
+    <div class="image-content">
+      <img src="te.png" alt="Продукт" />
+    </div>
+  </section>
+
+  <!-- Скрытая секция "Почему мы?" -->
+  <section class="section why-us-section" id="why-us-section">
+    <div class="text-content">
+      <h2>Почему именно мы?</h2>
+      <div class="image-gallery">
+        <img src="lux.png" alt="Фото 1">
+        <img src="war.png" alt="Фото 2">
+      </div>
+      <div class="why-us-points">
+        <div class="why-us-point">
+          <h3>Бесплатный доступ</h3>
+          <p>Мы предлагаем второй бесплатный чит на рынке, который доступен каждому.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Надежность</h3>
+          <p>Наш чит работает стабильно и не вызывает подозрений у античитов.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Простота использования</h3>
+          <p>Интуитивно понятный интерфейс и подробная инструкция помогут вам быстро начать.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Поддержка</h3>
+          <p>Мы всегда готовы помочь вам в нашем Telegram-канале.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Затемнение фона -->
+  <div class="modal-overlay"></div>
+
+  <!-- Модальное окно с инструкцией -->
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Инструкция по запуску чит-программы LuxWar</h2>
+      <ol>
+        <li>Отключите антивирус, чтобы избежать блокировки.</li>
+        <li>Скачайте и разархивируйте Лоадер.</li>
+        <li>Запустите Steam от имени администратора.</li>
+        <li>Запустите Лоадер от имени администратора, но не нажимайте на кнопку активации чита.</li>
+        <li>Запустите CS2 и только после этого инджектите чит.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Модальное окно для социальных сетей -->
+  <div id="socialMediaModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Социальные сети</h2>
+      <ul>
+        <li><a href="https://t.me/luxvarhacc" target="_blank">TG</a></li>
+        <li><a href="https://t.me/luxvarhacc" target="_blank">VK</a></li>
+        <li><a href="https://t.me/luxvarhacc" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/* Общие стили */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    color: #c0c0c0;
+    background: #151719;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+/* Затемнение фона при открытии модального окна */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* Уберите фон у заголовка */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    background: none;
+}
+
+/* Кнопки */
+.header button {
+    margin-left: 30px;
+    font-size: 1rem;
+    color: whitesmoke;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 25px;
+}
+
+.header button:hover {
+    text-decoration: underline;
+    background: none;
+}
+
+/* Стили для кнопки "Инструкция" */
+.instruction-button {
+    font-size: 1rem;
+    color: #2B000C;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.instruction-button:hover {
+    text-decoration: underline;
+    background: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: #2B000C;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(80, 0, 10, 0.6);
+}
+
+/* Модальные окна */
+.modal-content {
+    color: #c0c0c0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: whitesmoke;
+}
+
+.modal-content ol {
+    padding-left: 20px;
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.modal-content li {
+    margin-bottom: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Выравниваем логотип и текст по вертикали */
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    background: none;
+    border-radius: 25px;
+}
+
+.logo-img {
+    width: 40px; /* Размер изображения логотипа */
+    height: auto; /* Сохраняем пропорции */
+    margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+/* Кнопка "Почему мы?" */
+.why-us-button {
+    margin-left: 600px;
+    font-size: 1rem;
+    color: wheat;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.why-us-button:hover {
+    text-decoration: underline;
+}
+
+/* Стили для секции "Почему мы?" */
+#why-us-section {
+    display: none;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    transition: max-height 0.5s ease-out;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    flex: 1 1 calc(50% - 40px);
+    max-width: 300px;
+}
+
+/* Секции */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 0 20px;
+    opacity: 1;
+    transform: translateY(0);
+    background: none;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    text-align: center;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Уберите фоновые цвета у секций */
+.welcome-section,
+.reviews-section,
+.download-section {
+    background: none;
+}
+
+/* Контент секций */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.image-content {
+    max-width: 800px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.additional-image {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.additional-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .image-content {
+        max-width: 100%;
+    }
+
+    .additional-image {
+        display: none;
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 1200px) {
+    .image-content {
+        max-width: 1000px;
+    }
+
+    .additional-image img {
+        max-width: 500px;
+    }
+}
+
+/* Заголовки */
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    animation: wave 1.2s ease-in-out infinite, text-glow 1.5s ease-in-out infinite alternate;
+    padding: 0 20px;
+    font-weight: 800;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: wheat;
+    }
+    100% {
+        text-shadow: wheat;
+    }
+}
+
+/* Текст */
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #a0a0a0;
+    line-height: 1.6;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.download-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background: none;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: wheat;
+    animation: button-float 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+@keyframes button-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.download-button:hover {
+    transform: scale(1.1);
+    background: wheat;
+}
+
+/* Секция загрузки */
+.download-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .text-content,
+    .image-content {
+        flex: 1 1 100%;
+    }
+    .download-button {
+        width: 100%;
+    }
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    h1,
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Кнопка "Социальные сети" */
+.social-media-button {
+    margin-left: 30px;
+    font-size: 1rem;
+    color: whitesmoke;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.social-media-button:hover {
+    text-decoration: underline;
+}
+
+/* Стили для модального окна социальных сетей */
+#socialMediaModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: wheat;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: whitesmoke;
+}
+
+.modal-content ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.modal-content li {
+    margin: 10px 0;
+}
+
+/* Социальные сети */
+.modal-content a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.why-us-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.why-us-point {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: white;
+    color: #c0c0c0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+}
+
+.why-us-point:hover {
+    transform: translateY(-5px);
+    box-shadow: white;
+}
+
+/* Плашки "Почему мы?" */
+.why-us-point h3 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-shadow: white;
+    font-weight: 800;
+}
+
+.why-us-point p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 700;
+}
+
