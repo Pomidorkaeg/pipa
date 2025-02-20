@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ожидание - LuxWar</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="iconn.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="iconn.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="iconn.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="iconn.png" alt="Логотип LuxWar" class="logo-img">
+      LuxWar
+    </div>
+  </div>
+
+  <section class="section wait-section">
+    <div class="text-content">
+      <h2>Пожалуйста, подождите 3 минуты</h2>
+      <p>Для продолжения вам необходимо либо скачать наш браузер и подождать 3 минуты. Это необходимо для обеспечения безопасности и предотвращения злоупотреблений, а также для того чтоб проект продолжал существовать.</p>
+      <div id="timer">03:00</div>
+      <button id="downloadBrowserButton" class="download-button">Скачать браузер</button>
+      <button id="proceedButton" class="download-button" disabled>Продолжить</button>
+    </div>
+  </section>
+
+  <script src="wait-script.js"></script>
+</body>
+</html>
