@@ -121,8 +121,8 @@ html, body {
 .logo {
     display: flex;
     align-items: center; /* Выравниваем логотип и текст по вертикали */
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 850;
     color: whitesmoke;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -495,3 +495,37 @@ p {
     font-weight: 700;
 }
 
+.wait-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #timer {
+    font-size: 2rem;
+    font-weight: 800;
+    color: whitesmoke;
+    margin: 20px 0;
+  }
+  
+  .download-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background: none;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: wheat;
+    animation: button-float 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin: 10px;
+  }
+  
+  .download-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

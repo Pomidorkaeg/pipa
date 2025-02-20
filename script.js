@@ -16,27 +16,13 @@ document.querySelector('.why-us-button').addEventListener('click', function() {
     section.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Остальной JavaScript для открытия модальных окон и других функций
 document.getElementById('downloadButton').addEventListener('click', function() {
-    const url = 'https://drive.google.com/uc?export=download&id=1lvwTbq5PAQuNhzl1_B-GCHp1OdGCF433'; // Прямая ссылка
-    const link = document.createElement('a'); 
-    link.href = url;
-    link.setAttribute('download', 'LuxWar.rar');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-
-// Остальной JavaScript для открытия модальных окон и других функций
-document.getElementById('openSiteButton').addEventListener('click', function() {
-    const url = 'https://drive.google.com/uc?export=download&id=1p_HoTLFNFU0cpAjqJcsYjv7c-YglPOmB'; // Прямая ссылка
-    const link = document.createElement('a'); 
-    link.href = url;
-    link.setAttribute('download', 'cfg.rar');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
+    window.location.href = 'wait.html';
+  });
+  
+  document.getElementById('openSiteButton').addEventListener('click', function() {
+    window.location.href = 'wait.html';
+  });
 
 // Перемещение кнопки "Почему мы?"
 let isDragging = false;
